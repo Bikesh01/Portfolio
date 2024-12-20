@@ -6,14 +6,14 @@ export default function Home() {
     { label: "Years of Experience", value: 4 },
     { label: "Project Completed", value: 2 },
     { label: "Technology Mastered", value: 5 },
-    { label: "Code Commits", value: 300 }
+    { label: "Code Commits", value: 300 },
   ];
 
   const [counts, setCounts] = useState({
     experience: 0,
     projects: 0,
     technologies: 0,
-    commits: 0
+    commits: 0,
   });
 
   const countUp = (target, key) => {
@@ -25,29 +25,29 @@ export default function Home() {
         clearInterval(interval);
         setCounts((prevState) => ({
           ...prevState,
-          [key]: target
+          [key]: target,
         }));
       } else {
         setCounts((prevState) => ({
           ...prevState,
-          [key]: Math.floor(count)
+          [key]: Math.floor(count),
         }));
       }
     }, 10);
   };
 
   useEffect(() => {
-    countUp(counters[0].value, 'experience');
-    countUp(counters[1].value, 'projects');
-    countUp(counters[2].value, 'technologies');
-    countUp(counters[3].value, 'commits');
+    countUp(counters[0].value, "experience");
+    countUp(counters[1].value, "projects");
+    countUp(counters[2].value, "technologies");
+    countUp(counters[3].value, "commits");
   }, []);
 
   return (
     <>
       <section className="text-gray-600 body-font mt-10">
         <div className="container mx-auto flex px-1 py-8 md:flex-row flex-col items-stretch">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-32 lg:p-10 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center gap-">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-32 lg:p-10 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <span className="text-gray-300">Public Speaker</span>
             <h1 className="title-font sm:text-4xl lg:text-6xl mb-4 font-semibold text-white lg:leading-snug">
               Hello I'm
@@ -85,22 +85,38 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container mx-auto flex justify-between items-center mt-20 pl-4">
+        <div className="container mx-auto grid lg:grid-cols-4 md:grid-col-3 sm:grid-cols-2 mm:grid-cols-1   gap-4  mt-20 pl-4   ">
           <div className="flex justify-center items-center gap-4">
-            <span className="text-white font-bold text-6xl">+{counts.experience}</span>
-            <p className="text-gray-400">Years of <br /> Experience</p>
+            <span className="text-white font-bold text-6xl">
+              +{counts.experience}
+            </span>
+            <p className="text-gray-400">
+              Years of <br /> Experience
+            </p>
           </div>
           <div className="flex justify-center items-center gap-4">
-            <span className="text-white font-bold text-6xl">{counts.projects}</span>
-            <p className="text-gray-400">Project <br /> Completed</p>
+            <span className="text-white font-bold text-6xl">
+              {counts.projects}
+            </span>
+            <p className="text-gray-400">
+              Project <br /> Completed
+            </p>
           </div>
           <div className="flex justify-center items-center gap-4">
-            <span className="text-white font-bold text-6xl">{counts.technologies}</span>
-            <p className="text-gray-400">Technology <br /> Mastered</p>
+            <span className="text-white font-bold text-6xl">
+              {counts.technologies}
+            </span>
+            <p className="text-gray-400">
+              Technology <br /> Mastered
+            </p>
           </div>
           <div className="flex justify-center items-center gap-4">
-            <span className="text-white font-bold text-6xl">{counts.commits}</span>
-            <p className="text-gray-400">Code <br /> Commits</p>
+            <span className="text-white font-bold text-6xl">
+              {counts.commits}
+            </span>
+            <p className="text-gray-400">
+              Code <br /> Commits
+            </p>
           </div>
         </div>
       </section>

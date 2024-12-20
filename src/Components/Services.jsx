@@ -3,8 +3,8 @@ import React from "react";
 export default function Services() {
   return (
     <>
-      <div className="container mx-auto mt-18 flex justify-between items-center pl-4">
-        <div class="grid grid-cols-2 gap-4 p-28">
+      <div className="sm:container mx-auto mt-18 flex justify-between items-center pl-4">
+        <div class="grid lg:grid-cols-2 gap-4 lg:p-28 sm:grid-col-1 sm:p-8 ">
           <div className="p-7 text-white group border-b border-gray-800">
             <h1 className="flex justify-between items-center group-hover:text-[#1BF7A8] transition-colors duration-300">
               <span className="text-4xl">01</span>

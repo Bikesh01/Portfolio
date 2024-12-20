@@ -5,8 +5,8 @@ export default function Resume() {
     <>
       <div className="container mx-auto pl-16 mt-24">
         <div className="">
-          <div class="grid grid-cols-6 gap-4 px-32">
-            <div className="flex flex-col border-r border-gray-700 p-1 col-span-2">
+          <div class="grid xl:grid-cols-6 lg:grid-cols-1  gap-4 xl:px-32 lg:p-16" >
+            <div className="flex flex-col xl:border-r lg:border-b lg:p-3 border-gray-700  p-1 xl:col-span-2">
               <h1 className="text-4xl text-gray-50">Why hire Me ?</h1>
               <p className="mt-8 mb-10  text-gray-400 text-sm">
                 {" "}
@@ -28,7 +28,6 @@ export default function Resume() {
                 </button>
               </div>
             </div>
-
             <div className=" col-span-4 p-1">
               <h1 className="text-4xl text-gray-50">My experience</h1>
               <p className="mt-8 mb-10  text-gray-400 text-sm">
@@ -36,7 +35,7 @@ export default function Resume() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
                 adipisci, consequuntur{" "}
               </p>
-              <div class="grid grid-cols-2 gap-4">
+              <div class="grid sm:grid-cols-2 mm:grid-cols-1 gap-4">
                 <div className="bg-[#232229] p-6 rounded-lg">
                   <h1 className="text-[#1BF7A8]">2022 - present</h1>
                   <h2 className="mb-8 mt-4 text-[#F5F4F9]">
@@ -104,17 +103,17 @@ export default function Resume() {
                   </div>
                 </div>
               </div>
-              
-              
             </div>
-            <div className=" col-span-4 p-1">
+            
+          </div>
+          <div className=" xl:col-span-4 p-1">
               <h1 className="text-4xl text-gray-50">Education</h1>
               <p className="mt-8 mb-10  text-gray-400 text-sm">
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
                 adipisci, consequuntur{" "}
               </p>
-              <div class="grid grid-cols-2 gap-4">
+              <div class="grid sm:grid-cols-2 mm:grid-cols-1 gap-4">
                 <div className="bg-[#232229] p-6 rounded-lg">
                   <h1 className="text-[#1BF7A8]">2022 - present</h1>
                   <h2 className="mb-8 mt-4 text-[#F5F4F9]">
@@ -130,12 +129,12 @@ export default function Resume() {
                 <div className="bg-[#232229] p-6 rounded-lg">
                   <h1 className="text-[#1BF7A8]">2019-2024</h1>
                   <h2 className="mb-8 mt-4 text-[#F5F4F9]">
-                    BSC computer Science and Information Technology 
+                    BSC computer Science and Information Technology
                   </h2>
                   <div className="flex justify-start items-center gap-2">
                     <i class="text-[#1BF7A8] text-1xl ri-git-commit-fill"></i>
                     <div className="text-xs text-gray-500">
-                     Godawari College
+                      Godawari College
                     </div>{" "}
                   </div>
                 </div>
@@ -163,7 +162,10 @@ export default function Resume() {
                 </div>
                 <div className="bg-[#232229] p-6 rounded-lg">
                   <h1 className="text-[#1BF7A8]">2008</h1>
-                  <h2 className="mb-8 mt-4 text-[#F5F4F9]"> class 8 District Level Exam </h2>
+                  <h2 className="mb-8 mt-4 text-[#F5F4F9]">
+                    {" "}
+                    class 8 District Level Exam{" "}
+                  </h2>
                   <div className="flex justify-start items-center gap-2">
                     <i class="text-[#1BF7A8] text-1xl ri-git-commit-fill"></i>
                     <div className="text-xs text-gray-500">
@@ -171,20 +173,17 @@ export default function Resume() {
                     </div>{" "}
                   </div>
                 </div>
-               
               </div>
-              
-              
             </div>
-            <div className=" col-span-4 p-1">
+            <div className=" xl:col-span-4 p-1">
               <h1 className="text-4xl text-gray-50">SKill</h1>
               <p className="mt-8 mb-10  text-gray-400 text-sm">
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
                 adipisci, consequuntur{" "}
               </p>
-             
-              <div class="grid grid-cols-4 gap-4 mt-14 relative">
+
+              <div class="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mm:grid-cols-1  gap-4 mt-14 relative">
                 <div class="group relative">
                   <div class="absolute bottom-full mb-2 hidden group-hover:block   bg-white text-black text-sm py-1 px-3 rounded shadow-lg">
                     CSS3
@@ -241,33 +240,62 @@ export default function Resume() {
                   <i class="text-6xl flex items-center justify-center p-7 text-white bg-[#28272C] hover:text-[#1BF7A8] duration-1000 ease-in-out rounded-sm ri-image-edit-fill"></i>
                 </div>
               </div>
-
             </div>
-            <div className=" col-span-4 p-1">
+            <div className=" xl:col-span-4 p-1">
               <h1 className="text-4xl text-gray-50">About Me</h1>
               <p className="mt-8 mb-10  text-gray-400 text-sm">
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
                 adipisci, consequuntur{" "}
               </p>
-             
-              <div class="grid grid-cols-2 gap-4 mt-14 relative">
+
+              <div class="grid md:grid-cols-2 mm:grid-cols-1 mm:gap-6 gap-4 mt-14 relative">
                 <div className="flex flex-col gap-8">
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Name </h1> <span className="text-white">Bikesh K.c.</span></div>
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Experience </h1> <span className="text-white">+4</span></div>
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Nationality </h1> <span className="text-white">Nepali</span></div>
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Freelancer </h1> <span className="text-white">Available</span></div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Name </h1>{" "}
+                    <span className="text-white">Bikesh K.c.</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Experience </h1>{" "}
+                    <span className="text-white">+4</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Nationality </h1>{" "}
+                    <span className="text-white">Nepali</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Freelancer </h1>{" "}
+                    <span className="text-white">Available</span>
+                  </div>
                 </div>
                 <div className="flex flex-col gap-8">
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Phone </h1> <span className="text-white">+977-9825007072.</span></div>
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Facebook </h1> <span className="text-white">bikesh.kc.90</span></div>
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Email </h1> <span className="text-white">bikeshkc501@gmail.com</span></div>
-                  <div className="flex items-center justify-start gap-4 text-lg "> <h1 className="text-gray-500">Language </h1> <span className="text-white">English, Hindi, Nepali</span></div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Phone </h1>{" "}
+                    <span className="text-white">+977-9825007072.</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Facebook </h1>{" "}
+                    <span className="text-white">bikesh.kc.90</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Email </h1>{" "}
+                    <span className="text-white">bikeshkc501@gmail.com</span>
+                  </div>
+                  <div className="flex items-center justify-start gap-4 text-lg ">
+                    {" "}
+                    <h1 className="text-gray-500">Language </h1>{" "}
+                    <span className="text-white">English, Hindi, Nepali</span>
+                  </div>
                 </div>
               </div>
-
             </div>
-          </div>
         </div>
       </div>
     </>

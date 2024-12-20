@@ -40,7 +40,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="py-2.5 z-10 px-8 pl-12 mt-5 mx-auto container">
+    <nav className="py-2.5 z-10 px-8 pl-12 mt-5 mx-auto sm:container">
       <div className="flex flex-wrap items-center justify-between px-4 w-full h-full   ">
         <Link to="/" className="flex items-center gap-1">
           <span className="self-center text-3xl font-medium whitespace-nowrap text-white">
