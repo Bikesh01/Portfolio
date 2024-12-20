@@ -7,17 +7,13 @@ import Contact from "./Components/Contact";
 import Gallery from "./Components/Gallery";
 import Hireme from "./Components/Hireme";
 import Footer from "./Components/Footer";
-import 'remixicon/fonts/remixicon.css'
+import 'remixicon/fonts/remixicon.css';
 import Resume from "./Components/Resume";
 import Services from "./Components/Services";
 import Work from "./Components/Work";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    document.title = "Bikesh"; // Change title here
-  }, []);
+ 
 
   return (
     <Router>
@@ -37,7 +33,7 @@ function App() {
       </div>
 
       <div className="div">
-        {/* <Footer/> */}
+        {/* <Footer /> */}
       </div>
     </Router>
   );
