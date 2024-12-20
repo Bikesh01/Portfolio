@@ -5,6 +5,33 @@
 @tailwind utilities;
 /* index.css or App.css */
 
+/* Global Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width of the scrollbar */
+  height: 10px; /* For horizontal scrollbar */
+}
+
+/* Scrollbar Track - background of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light grey background */
+}
+
+/* Scrollbar Thumb - the draggable part */
+::-webkit-scrollbar-thumb {
+  background-color: #1BF7A8; /* Your desired color for the thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Hover effect for the Thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #17c28b; /* Slightly darker green for hover effect */
+}
+
+/* Firefox specific styling */
+.scrollable-container {
+  scrollbar-width: thin; /* Sets the width of the scrollbar */
+  scrollbar-color: #1BF7A8 #f1f1f1; /* Thumb and track color for Firefox */
+}
 
 * {
     margin: 0;

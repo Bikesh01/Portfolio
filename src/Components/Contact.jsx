@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="mt-24">
           <div class="grid grid-cols-2 gap-9">
             <div class="px-8 py-20 bg-[#28272C] max-w-2xl mx-auto rounded-3xl">
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-start">
                 <h1 className="text-4xl text-[#1BF7A8]">Let's Work Together</h1>
                 <p className="text-sm text-gray-500 mt-8 mb-12">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
