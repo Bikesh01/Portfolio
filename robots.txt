@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://bikeshkc.com.np/sitemap.xml
