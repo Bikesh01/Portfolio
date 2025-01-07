@@ -66,19 +66,6 @@ export default function Navbar() {
                 zIndex: 2,
               }}
             ></lord-icon>
-            <lord-icon
-              src="https://cdn.lordicon.com/bazecvhf.json"
-              trigger="hover"
-              colors="primary:#ffffff"
-              style={{
-                width: "80px",
-                height: "80px",
-                position: "absolute",
-                top: "0",
-                left: "0",
-                zIndex: 1,
-              }}
-            ></lord-icon>
           </div>
 
           <button
@@ -165,13 +152,19 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                to="/Hireme"
-                className={`bg-[#1BF7A8] flex items-center justify-center w-24 h-8 border-0 hover:border hover:border-[#1BF7A8] rounded-xl text-lg ${getLinkClass(
-                  "/Hireme"
-                )}`}
+                to="/Notes"
+                className={`nav-link ${getLinkClass("/Notes")}`}
+              >
+                Notes
+              </Link>
+            </li>
+            <li>
+              <a
+                href="mailto:bikeshkc501@gmail.com?subject=Job Inquiry&body=Hello Bikesh,"
+                className="bg-[#1BF7A8] flex items-center justify-center w-24 h-8 border-0 hover:border hover:border-[#1BF7A8] rounded-xl text-lg"
               >
                 Hire Me
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

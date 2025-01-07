@@ -76,5 +76,10 @@ body{
 
   @media (max-width: 639px) {
     
+
+  }
+  
+  .imgani{
+    animation: 3s ease-in 1s infinite reverse both running slidein;
   }
   

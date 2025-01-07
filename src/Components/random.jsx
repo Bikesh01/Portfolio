@@ -1,67 +1,41 @@
-import React, { useState } from "react";
+import React from 'react'
 
-export default function Resume() {
-  const [activeSection, setActiveSection] = useState("Experience");
-
-  const handleSectionClick = (section) => {
-    setActiveSection(section);
-  };
-
+function random() {
   return (
     <>
-      <div className="container mx-auto pl-16 mt-6">
-        <div className="grid xl:grid-cols-6 lg:grid-cols-1 gap-4 xl:px-32 lg:p-16">
-          <div className="flex flex-col xl:border-r lg:p-3 border-gray-700 p-1 xl:col-span-2">
-            <h1 className="text-4xl text-gray-50">Why hire Me ?</h1>
-            <p className="mt-8 mb-10 text-gray-400 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              adipisci, consequuntur
-            </p>
-            <div className="flex flex-col justify-center items-center gap-4">
-              <button
-                className={`text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out ${
-                  activeSection === "Experience" ? "bg-[#1BF7A8] text-black" : ""
-                }`}
-                onClick={() => handleSectionClick("Experience")}
-              >
-                Experience
-              </button>
-              <button
-                className={`text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out ${
-                  activeSection === "Education" ? "bg-[#1BF7A8] text-black" : ""
-                }`}
-                onClick={() => handleSectionClick("Education")}
-              >
-                Education
-              </button>
-              <button
-                className={`text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out ${
-                  activeSection === "Skill" ? "bg-[#1BF7A8] text-black" : ""
-                }`}
-                onClick={() => handleSectionClick("Skill")}
-              >
-                Skill
-              </button>
-              <button
-                className={`text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out ${
-                  activeSection === "About Me" ? "bg-[#1BF7A8] text-black" : ""
-                }`}
-                onClick={() => handleSectionClick("About Me")}
-              >
-                About Me
-              </button>
+      <div className="container mx-auto pl-16 mt-24">
+        <div className="">
+          <div class="grid xl:grid-cols-6 lg:grid-cols-1  gap-4 xl:px-32 lg:p-16" >
+            <div className="flex flex-col xl:border-r lg:border-b lg:p-3 border-gray-700  p-1 xl:col-span-2">
+              <h1 className="text-4xl text-gray-50">Why hire Me ?</h1>
+              <p className="mt-8 mb-10  text-gray-400 text-sm">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                adipisci, consequuntur{" "}
+              </p>
+              <div className=" flex flex-col justify-center items-center gap-4">
+                <button  className="text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out">
+                  Experience
+                </button>
+                <button className="text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out">
+                  Education
+                </button>
+                <button className="text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out">
+                  Skill
+                </button>
+                <button className="text-lg text-gray-200 bg-[#28272C] py-2 w-72 hover:bg-[#1BF7A8] hover:text-black duration-1000 ease-in-out">
+                  Adout Me
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div className="col-span-4 p-1">
-            {activeSection === "Experience" && (
-              <>
-                <h1 className="text-4xl text-gray-50">My Experience</h1>
-                <p className="mt-8 mb-10 text-gray-400 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  adipisci, consequuntur
-                </p>
-                <div class="grid sm:grid-cols-2 mm:grid-cols-1 gap-4">
+            <div className=" col-span-4 p-1">
+              <h1 className="text-4xl text-gray-50">My experience</h1>
+              <p className="mt-8 mb-10  text-gray-400 text-sm">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                adipisci, consequuntur{" "}
+              </p>
+              <div class="grid sm:grid-cols-2 mm:grid-cols-1 gap-4">
                 <div className="bg-[#232229] p-6 rounded-lg">
                   <h1 className="text-[#1BF7A8]">2022 - present</h1>
                   <h2 className="mb-8 mt-4 text-[#F5F4F9]">
@@ -129,17 +103,17 @@ export default function Resume() {
                   </div>
                 </div>
               </div>
-              </>
-            )}
-
-            {activeSection === "Education" && (
-              <>
-                <h1 className="text-4xl text-gray-50">Education</h1>
-                <p className="mt-8 mb-10 text-gray-400 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  adipisci, consequuntur
-                </p>
-                <div class="grid sm:grid-cols-2 mm:grid-cols-1 gap-4">
+            </div>
+            
+          </div>
+          <div className=" xl:col-span-4 p-1">
+              <h1 className="text-4xl text-gray-50">Education</h1>
+              <p className="mt-8 mb-10  text-gray-400 text-sm">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                adipisci, consequuntur{" "}
+              </p>
+              <div class="grid sm:grid-cols-2 mm:grid-cols-1 gap-4">
                 <div className="bg-[#232229] p-6 rounded-lg">
                   <h1 className="text-[#1BF7A8]">2022 - present</h1>
                   <h2 className="mb-8 mt-4 text-[#F5F4F9]">
@@ -200,17 +174,16 @@ export default function Resume() {
                   </div>
                 </div>
               </div>
-              </>
-            )}
+            </div>
+            <div className=" xl:col-span-4 p-1">
+              <h1 className="text-4xl text-gray-50">SKill</h1>
+              <p className="mt-8 mb-10  text-gray-400 text-sm">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                adipisci, consequuntur{" "}
+              </p>
 
-            {activeSection === "Skill" && (
-              <>
-                <h1 className="text-4xl text-gray-50">Skill</h1>
-                <p className="mt-8 mb-10 text-gray-400 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  adipisci, consequuntur
-                </p>
-                <div class="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mm:grid-cols-1  gap-4 mt-14 relative">
+              <div class="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mm:grid-cols-1  gap-4 mt-14 relative">
                 <div class="group relative">
                   <div class="absolute bottom-full mb-2 hidden group-hover:block   bg-white text-black text-sm py-1 px-3 rounded shadow-lg">
                     CSS3
@@ -267,17 +240,16 @@ export default function Resume() {
                   <i class="text-6xl flex items-center justify-center p-7 text-white bg-[#28272C] hover:text-[#1BF7A8] duration-1000 ease-in-out rounded-sm ri-image-edit-fill"></i>
                 </div>
               </div>
-              </>
-            )}
+            </div>
+            <div className=" xl:col-span-4 p-1">
+              <h1 className="text-4xl text-gray-50">About Me</h1>
+              <p className="mt-8 mb-10  text-gray-400 text-sm">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                adipisci, consequuntur{" "}
+              </p>
 
-            {activeSection === "About Me" && (
-              <>
-                <h1 className="text-4xl text-gray-50">About Me</h1>
-                <p className="mt-8 mb-10 text-gray-400 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  adipisci, consequuntur
-                </p>
-                <div class="grid md:grid-cols-2 mm:grid-cols-1 mm:gap-6 gap-4 mt-14 relative">
+              <div class="grid md:grid-cols-2 mm:grid-cols-1 mm:gap-6 gap-4 mt-14 relative">
                 <div className="flex flex-col gap-8">
                   <div className="flex items-center justify-start gap-4 text-lg ">
                     {" "}
@@ -323,11 +295,11 @@ export default function Resume() {
                   </div>
                 </div>
               </div>
-              </>
-            )}
-          </div>
+            </div>
         </div>
       </div>
     </>
-  );
+  )
 }
+
+export default random
