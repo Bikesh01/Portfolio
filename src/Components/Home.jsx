@@ -164,7 +164,7 @@ export default function Home() {
                     Software Development:
                   </strong>{" "}
                   Learned modern software development methodologies and
-                  implemented practical projects using Python, Java, and web
+                  implemented practical projects using Javascript, vite + react and web
                   technologies.
                 </li>
                 <li>
@@ -172,7 +172,7 @@ export default function Home() {
                     Database Management:
                   </strong>{" "}
                   Acquired expertise in designing, managing, and optimizing
-                  relational databases using MySQL and PostgreSQL.
+                  relational databases using MySQL.
                 </li>
 
                 <li>
@@ -184,7 +184,7 @@ export default function Home() {
                 <li>
                   <strong className="text-[#1BF7A8]">Web Development:</strong>{" "}
                   Built dynamic and responsive websites, mastering HTML, CSS,
-                  JavaScript, and backend frameworks.
+                  JavaScript.
                 </li>
                 <li>
                   <strong className="text-[#1BF7A8]">Research Skills:</strong>{" "}
