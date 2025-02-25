@@ -49,18 +49,18 @@ export default function Home() {
     <>
       <section className="text-gray-600 body-font mt-10">
         <div className="container mx-auto flex px-1 py-8 md:flex-row flex-col items-stretch">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-32 lg:p-10 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24   lg:p-10 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <span className="text-gray-300">Public Speaker</span>
             <h1 className="title-font sm:text-4xl lg:text-6xl mb-4 font-semibold text-white lg:leading-snug">
               Hello I'm
               <br className="hidden lg:inline-block" />
-              <span className="text-[#1BF7A8]"> Bikesh k.c.</span>
+              <span className="text-[#1BF7A8]"> Bikesh k.c.</span>  
             </h1>
             <p className="mb-24 leading-relaxed mt-6 text-gray-400">
               Join me in Below Social media and Let's Grow Together
             </p>
             <div className="lg:flex lg:justify-center lg:items-center gap-8 ">
-              <button className="relative inline-flex text-[#1BF7A8] border border-[#1BF7A8] py-2 px-6 focus:outline-none rounded-3xl text-lg gap-6 group overflow-hidden">
+              <button className="relative inline-flex text-[#1BF7A8] border border-[#1BF7A8] py-2 px-6 focus:outline-none rounded-3xl text-lg gap-6 group overflow-hidden"> 
                 <span className="relative z-10 group-hover:text-black transition-colors duration-500 ease-out">
                   Download CV
                 </span>
@@ -141,7 +141,7 @@ export default function Home() {
             What I learned In College
           </h1>
 
-          <div className="grid grid-cols-2 gap-9 p-24">
+          <div className="grid sm:grid-cols-1   xl:grid-cols-2 gap-9 p-24">
             <div className=" flex justify-center items-center">
               <img className="rounded-3xl" src={gallery} alt="" srcset="" />
             </div>
@@ -227,7 +227,7 @@ export default function Home() {
             Praticipated in Hacathons
           </h1>
 
-          <div className="grid grid-cols-2 gap-9 p-24">
+          <div className="grid sm:grid-cols-1   xl:grid-cols-2 gap-9 p-24">
             <div className="">
               <h1 className="text-3xl text-[#1BF7A8]">
                 Purwanchal Engineering Campus(ERC)
@@ -300,7 +300,7 @@ export default function Home() {
             Worked As Volunteer In AI Bootcamp - I
           </h1>
 
-          <div className="grid grid-cols-2 gap-9 p-24">
+          <div className="grid sm:grid-cols-1   xl:grid-cols-2 gap-9 p-24">
             <div className=" flex justify-center items-center">
               <img className="rounded-3xl" src={aibootcamp} alt="" srcset="" />
             </div>

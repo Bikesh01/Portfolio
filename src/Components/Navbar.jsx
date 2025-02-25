@@ -155,7 +155,7 @@ export default function Navbar() {
                 to="/Notes"
                 className={`nav-link ${getLinkClass("/Notes")}`}
               >
-                Notes
+                Material
               </Link>
             </li>
             <li>

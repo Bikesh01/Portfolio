@@ -68,7 +68,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="container mx-auto mt-10">
+      <div className="container mx-auto mt-10 transition-opacity duration-1000 ease-in-out">
         <div className="mt-10 flex justify-end items-end">
           <div className="grid sm:grid-cols-2 gap-9">
             <div className="px-8 py-20 bg-[#28272C] max-w-2xl mx-auto rounded-3xl">

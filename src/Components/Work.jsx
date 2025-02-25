@@ -4,10 +4,10 @@ export default function Work() {
   return (
     <>
       <div className="container mx-auto p-20">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
           <div>
             <h1 className="text-7xl text-gray-700 font-extrabold">01</h1>
-            <h1 className="text-6xl text-gray-100 mt-10">Itahari Academic Solution</h1>
+            <h1 className="text-4xl xl:text-6xl text-gray-100 mt-10">Itahari Academic Solution</h1>
             <p className="text-sm text-gray-500 mt-6 mb-10">
               Academic Website Itahari academic solution
             </p>
@@ -34,10 +34,10 @@ export default function Work() {
         </div>
       </div>
       <div className="container mx-auto p-20">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
           <div>
             <h1 className="text-7xl text-gray-700 font-extrabold">02</h1>
-            <h1 className="text-6xl text-gray-100 mt-10">E_Bhumi</h1>
+            <h1 className="text-4xl xl:text-6xl text-gray-100 mt-10">E_Bhumi</h1>
             <p className="text-sm text-gray-500 mt-6 mb-10">
               Realestate website E_Bhumi 
             </p>
@@ -64,10 +64,10 @@ export default function Work() {
         </div>
       </div>
       <div className="container mx-auto p-20">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
           <div>
             <h1 className="text-7xl text-gray-700 font-extrabold">03</h1>
-            <h1 className="text-6xl text-gray-100 mt-10">KcEduHub</h1>
+            <h1 className="text-4xl xl:text-6xl text-gray-100 mt-10">KcEduHub</h1>
             <p className="text-sm text-gray-500 mt-6 mb-10">
               Courses selling website kcEduhub
             </p>
@@ -94,10 +94,10 @@ export default function Work() {
         </div>
       </div>
       <div className="container mx-auto p-20">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
           <div>
             <h1 className="text-7xl text-gray-700 font-extrabold">04</h1>
-            <h1 className="text-6xl text-gray-100 mt-10">Three.JS</h1>
+            <h1 className="text-4xl xl:text-6xl text-gray-100 mt-10">Three.JS</h1>
             <p className="text-sm text-gray-500 mt-6 mb-10">
               Show case of Three  Javascript (Three.JS).
             </p>
@@ -124,10 +124,10 @@ export default function Work() {
         </div>
       </div>
       <div className="container mx-auto p-20">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
           <div>
             <h1 className="text-7xl text-gray-700 font-extrabold">05</h1>
-            <h1 className="text-6xl text-gray-100 mt-10">Price Design & Code</h1>
+            <h1 className="text-4xl xl:text-6xl text-gray-100 mt-10">Price Design & Code</h1>
             <p className="text-sm text-gray-500 mt-6 mb-10">
               Price design UI and UX 
             </p>
@@ -154,10 +154,10 @@ export default function Work() {
         </div>
       </div>
       <div className="container mx-auto p-20">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
           <div>
             <h1 className="text-7xl text-gray-700 font-extrabold">06</h1>
-            <h1 className="text-6xl text-gray-100 mt-10">EduCare Home Section</h1>
+            <h1 className="text-4xl xl:text-6xl text-gray-100 mt-10">EduCare Home Section</h1>
             <p className="text-sm text-gray-500 mt-6 mb-10">
               Simple Academic website to sell courses  educare 
             </p>
